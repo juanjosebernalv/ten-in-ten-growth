@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.footer-section {
+  &__container {
+
+    @apply bg-dark-green w-full h-full min-h-full min-w-full mt-4 pt-8 md:pt-24 px-6 md:px-24 pb-40 md:pb-24 bg-line-footer bg-no-repeat bg-bottom md:bg-footer-desktop md:bg-right-bottom;
+  }
+
+  &__first-section {
+    @apply flex w-full flex-col md:flex-row gap-0 md:gap-20;
+  }
+
+  &__second-section {
+    @apply w-full min-w-full;
+  }
+
+  &__copy {
+    @apply text-light-gray font-light text-sm leading-6 mt-14 pr-0 md:pr-40;
+  }
+
+  &__email-label {
+    @apply text-white font-normal text-sm leading-6 mt-8 pr-0 md:pr-40;
+  }
+}

@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.home {
+  &__header {
+    @apply  sticky top-0 z-50 h-20 max-h-20 md:h-32 md:min-h-32 bg-white w-full min-w-full p-6 md:pl-16 border-b-2;
+    @apply flex flex-row justify-between md:justify-start md:align-middle;
+  }
+  &__nav {
+    @apply hidden md:flex w-full min-w-fit items-center flex-auto;
+    &--image {
+      @apply w-[138px] h-[54px] md:w-[144px]  md:h-[56px] flex-none -mt-4 md:mt-2;
+    }
+    &--icon {
+      @apply h-6 hidden md:block;
+      &--white {
+        @apply h-6 block md:hidden
+      }
+    }
+    &--link {
+      @apply text-primary pb-1 font-semibold text-lg;
+    }
+    &--list {
+      @apply flex items-center w-5/6 gap-24  px-0 md:px-14  justify-center content-center min-h-10 cursor-pointer;
+      &-active {
+        @apply bg-no-repeat
+        bg-left-bottom
+        bg-contain
+        bg-underline-green;
+      }
+    }
+
+    &--select {
+      @apply bg-transparent border-none h-6 md:text-primary text-white font-bold;
+    }
+  }
+}
+
+.list-test {
+  & li {
+    height: 0px;
+    padding-bottom: 20px;
+    margin-bottom: 23px;
+    & ::marker {     text-align: end !important; }
+  }
+}
+
+section {
+  display: grid;
+  place-items: center;
+}
+
+
+.input-wrapper {
+  @apply relative inline-block w-full max-w-full  md:max-w-[500px] h-[61px] border rounded-xl border-primary focus:border-primary border-opacity-60 bg-primary bg-opacity-20;
+  &-dark {
+    @apply relative inline-block w-full max-w-full  md:max-w-[500px] h-[61px] border rounded-md border-primary focus:border-primary bg-primary bg-opacity-20;
+    & input {
+      @apply pl-4 h-[58px] bg-transparent text-white w-4/6 text-base md:text-xl;
+    }
+
+    & button {
+      @apply absolute top-0 right-0 border-none font-semibold text-primary bg-secondary w-fit px-7
+      h-[59px] cursor-pointer rounded-xl text-base md:text-xl;
+    }
+  }
+  & input {
+    @apply pl-4 h-[58px] bg-transparent text-primary  w-4/6 text-base md:text-xl;
+  }
+
+  & button {
+    @apply absolute top-0 right-0 border-none font-semibold text-primary bg-secondary w-fit px-8 h-[59px] cursor-pointer rounded-xl text-base md:text-xl;
+  }
+}
+
+
+.simple-col {
+  @apply w-full md:w-1/2;
+}

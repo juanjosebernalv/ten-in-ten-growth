@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.why-section {
+  &__container {
+    @apply bg-primary mt-0 md:mt-12 w-full max-w-full pt-8 md:pt-24 px-6 md:px-0 bg-bg-why bg-right-top bg-no-repeat h-full min-h-full pb-10 md:pb-20 flex flex-col md:flex-row justify-center gap-0 md:bg-right-pattern md:bg-right-top md:gap-32;
+  }
+
+  &__title {
+    @apply text-white text-sm md:text-base font-bold leading-4 tracking-widest md:w-fit mt-6 md:mt-0;
+  }
+
+  &__subtitle {
+    @apply font-bold text-3xl md:text-[32px] leading-9 md:leading-[48px] mt-4 w-80 md:w-[600px] text-white;
+  }
+
+  &__paragraph {
+    @apply text-white font-normal text-base leading-6 mt-4 md:mt-8 md:text-lg;
+  }
+}

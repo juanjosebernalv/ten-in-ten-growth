@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.who-section {
+  &__container {
+    @apply flex flex-col md:flex-row mt-4 pb-60 w-full min-w-full pt-8 md:pt-24 px-6 h-full min-h-full md:px-24 gap-0 md:gap-32 bg-join-us-pattern bg-no-repeat bg-right-bottom md:bg-left-bottom;
+  }
+
+  &__title {
+    @apply text-primary text-sm md:text-base font-bold leading-4 tracking-widest;
+  }
+
+  &__subtitle {
+    @apply font-bold text-3xl md:text-[32px] leading-9 md:leading-[48px] mt-4 md:w-full w-full text-primary;
+  }
+
+  &__description {
+    @apply text-base md:text-xl leading-7 mt-10 w-full md:w-full font-normal text-primary;
+  }
+
+  &__includes {
+    @apply text-primary pl-0 text-base font-medium leading-10 list-inside md:text-xl ;
+
+    & li {
+      @apply pb-0 md:pb-2;
+
+      &::before {
+        content: url("../../../assets/images/svg/arrow-green.svg") "\00a0\00a0\00a0";
+        vertical-align: -18%;
+      }
+    }
+  }
+}
