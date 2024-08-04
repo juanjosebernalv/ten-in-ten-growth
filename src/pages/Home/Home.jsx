@@ -16,6 +16,7 @@ import HowSection from '../../components/section/HowSection/HowSection';
 import { WhoSection } from '../../components/section/WhoSection/WhoSection';
 import { FoundationSection } from '../../components/section/FoundationSection/FoundationSection';
 import FooterSection from '../../components/section/FooterSection/FooterSection';
+import { TeamSection } from '../../components/section/TeamSection/TeamSection';
 
 
 const Home = () => {
@@ -50,6 +51,7 @@ const Home = () => {
     { label: 'Why', value: 'why' },
     { label: 'What', value: 'what' },
     { label: 'How', value: 'how' },
+    { label: 'Team', value: 'team' },
     { label: 'Who', value: 'who' }
   ];
 
@@ -84,6 +86,11 @@ const Home = () => {
             <li>
               <Link className="home__nav--link" activeClass="home__nav--list-active" smooth spy to="how">
                 {t('how')}
+              </Link>
+            </li>
+            <li>
+              <Link className="home__nav--link" activeClass="home__nav--list-active" smooth spy to="team">
+                {t('team')}
               </Link>
             </li>
             <li>
@@ -239,6 +246,9 @@ const Home = () => {
         </Element>
         <Element name="how">
           <HowSection />
+        </Element>
+        <Element name="team">
+          <TeamSection />
         </Element>
         <Element name="who">
           <WhoSection />
