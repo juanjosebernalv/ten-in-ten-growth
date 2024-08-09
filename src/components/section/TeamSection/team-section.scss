@@ -1,0 +1,60 @@
+.team-section {
+  &__container {
+    @apply w-full h-full min-h-full min-w-full pt-8 md:pt-[100px] flex flex-col md:flex-row justify-start gap-0 md:gap-32 bg-primary pb-6 md:pb-[100px] px-6 md:px-24;
+  }
+  &__summary {
+    &-title {
+      @apply text-5xl bg-underline-pattern bg-no-repeat bg-left-bottom text-white font-bold;
+    }
+    &-description {
+      @apply text-lg text-white font-medium mt-4 mb-12;
+    }
+  }
+  &__team-members {
+    @apply w-full h-full min-h-full min-w-full px-6 flex flex-col md:flex-row justify-center gap-0 mt-10 md:mt-[100px] md:gap-32;
+
+  }
+  &__profile {
+    &-container{
+      display: grid;
+      @apply w-11/12 ml-3;
+    }
+    &-outer {
+      background-color: #B6F501;
+      transform: rotate(-7deg);
+      border-radius: 10px;
+    }
+    &-inner, &-outer {
+      grid-area: 1 / 1;
+    }
+    &-inner {
+      z-index: 20;
+    }
+    &-hover-card {
+      @apply cursor-pointer hover:bg-black;
+    }
+  }
+  &__title {
+    @apply text-2xl font-bold text-primary mt-10;
+  }
+  &__role {
+    @apply text-2xl font-normal text-primary mt-3;
+  }
+  &__description {
+    @apply text-base font-normal text-primary mt-3;
+  }
+}
+
+.container {
+  position: relative;
+  text-align: left;
+  color: white;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
+  color: white;
+  padding-right: 32px;
+}
