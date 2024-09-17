@@ -53,13 +53,15 @@ const FooterSection = () => {
       <div className="footer-section__first-section">
         <div className="simple-col" >
           <img src={footerImage} alt="growth-logo-footer" className="pb-6" />
-          <p className="text-white font-normal text-base leading-6 mt-8">
+          {/*  Uncommento to show icons */}
+          {/* <p className="text-white font-normal text-base leading-6 mt-8">
             {t("footer_description")}
           </p>
+
           <div className="flex gap-3 mt-6">
             <img src={LinkedinLogo} alt="linkedin-logo-footer" />
             <img src={FacebookLogo} alt="facebook-logo-footer" />
-          </div>
+          </div> */}
         </div>
         <div className="simple-col" >
           <div className="input-wrapper-dark mt-4">

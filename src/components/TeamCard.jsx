@@ -7,8 +7,6 @@ export const TeamCard = ({ member, index }) => {
 
 
   useEffect(() => {
-    console.log('member', member);
-    console.log('index', index);
     setIsReady(true);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);

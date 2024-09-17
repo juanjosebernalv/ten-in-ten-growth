@@ -2,7 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import FoundationImg from "../../../assets/images/png/foundation-image.png";
 import FoundationMiddleImg from "../../../assets/images/png/baby-image.png";
-import VanLeerLogo from "../../../assets/images/svg/van-leer-logo.svg";
+import VanLeerLogo from "../../../assets/images/png/van-leer-logo.png";
 import TenLogo from "../../../assets/images/svg/logo-10-in-10.svg";
 import LinkButton from '../../LinkButton';
 import "./foundation-section.scss";
@@ -25,7 +25,7 @@ export const FoundationSection = () => {
       <div className="foundation-section__group" >
         <img src={FoundationImg} alt="foundation-image" className="simple-col mb-6" />
         <div className="foundation-section__group--item">
-          <img src={VanLeerLogo} alt="van-leer-image" />
+          <img src={VanLeerLogo} alt="van-leer-image" className="w-72" />
           <p className="foundation-section__description">
             {t("foundation_description")}
           </p>

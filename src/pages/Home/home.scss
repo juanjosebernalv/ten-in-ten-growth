@@ -10,7 +10,7 @@
   &__nav {
     @apply hidden md:flex w-full min-w-fit items-center flex-auto;
     &--image {
-      @apply w-[138px] h-[54px] md:w-[144px]  md:h-[56px] flex-none -mt-4 md:mt-2;
+      @apply w-[134px] h-[64px] md:w-[174px]  md:h-[76px] flex-none -mt-4 md:mt-2;
     }
     &--icon {
       @apply h-6 hidden md:block;
