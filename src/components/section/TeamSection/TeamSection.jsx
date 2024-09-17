@@ -12,7 +12,6 @@ import Member7 from "../../../assets/images/png/members/member7.png";
 import Member8 from "../../../assets/images/png/members/member8.png";
 import Member9 from "../../../assets/images/png/members/member9.png";
 import Member10 from "../../../assets/images/png/members/member10.png";
-import Member11 from "../../../assets/images/png/members/member11.png";
 import './team-section.scss';
 import { TeamCard } from '../../TeamCard';
 
@@ -30,7 +29,6 @@ export const TeamSection = () => {
     Member8,
     Member9,
     Member10,
-    Member11,
   ];
   return (
     <div className="w-full min-w-full">

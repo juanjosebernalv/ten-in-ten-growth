@@ -26,7 +26,7 @@ const WhySection = () => {
           <div className="w-full md:w-4/12 px-0 md:px-10 bg-none md:bg-wave-left bg-no-repeat bg-right-top">
             <img src={Wallet} alt="wallet-icon" />
             <p className="why-section__paragraph">
-              {t("wallet_paragraph")}
+              {parse(t("wallet_paragraph"))}
             </p>
           </div>
           <div className="w-full md:w-4/12 px-0 md:px-10 bg-none md:bg-wave-right bg-no-repeat bg-right-top">
@@ -38,7 +38,7 @@ const WhySection = () => {
           <div className="w-full md:w-4/12 px-0 md:px-10">
             <img src={Pig} alt="pig-icon" />
             <p className="why-section__paragraph">
-              {t("pig_paragraph")}
+              {parse(t("pig_paragraph"))}
             </p>
           </div>
           <div className="hidden md:flex md:w-1/12 ">
